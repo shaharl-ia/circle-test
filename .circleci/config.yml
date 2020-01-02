@@ -2,7 +2,7 @@ version: 2.1
 
 orbs:
   node: circleci/node@1.1.6
-  gcp-gke: circleci/gcp-gke@0.1.0
+  gcp-gke: circleci/gcp-gke@1.0.1
   gcr: circleci/gcp-gcr@0.0.2
 
 jobs:
@@ -50,8 +50,9 @@ jobs:
       - gcp-gke/init
       # Update a deployment's Docker image.
       - gcp-gke/rollout-image:
-          deployment: circle-ci-cluster
-          container: circle-gke
+          cluster: circle-ci-cluster
+          deployment: production-circle-demo
+          container: rusty-pangolin
           image: gcr.io/charged-polymer-221319/circle-gke:v2
 
 workflows:
