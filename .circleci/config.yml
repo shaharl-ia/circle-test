@@ -50,7 +50,7 @@ jobs:
       # - gcp-gke/init
       # Update a deployment's Docker image.
       - gcp-gke/rollout-image:
-          # cluster: circle-ci-cluster
+          cluster: circle-ci-cluster
           deployment: production-circle-demo
           container: rusty-pangolin
           image: gcr.io/charged-polymer-221319/circle-gke:v2
