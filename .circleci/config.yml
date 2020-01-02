@@ -56,7 +56,8 @@ jobs:
           cluster: circle-ci-cluster
           deployment: production-circle-demo
           container: rusty-pangolin
-          image: gcr.io/charged-polymer-221319/circle-gke:v2
+          image: gcr.io/charged-polymer-221319/circle-gke
+          tag: v2
 
 workflows:
   build_update_deploy:
