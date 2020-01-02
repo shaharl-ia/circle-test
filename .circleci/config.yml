@@ -49,7 +49,7 @@ jobs:
       # Initialize the `gcloud` CLI.
       - gcloud-init
       - run:
-          command: gcloud init
+          command: 'gcloud init'
       # Update a deployment's Docker image.
       - gcp-gke/rollout-image:
           cluster: circle-ci-cluster
