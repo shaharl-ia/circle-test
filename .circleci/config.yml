@@ -50,8 +50,8 @@ jobs:
       - gcp-gke/init
       # Update a deployment's Docker image.
       - gcp-gke/rollout-image:
-          deployment: circle-ci-cluster
-          container: dominic-backend
+          deployment: k8s/app-dep
+          container: circle-gke
           image: gcr.io/charged-polymer-221319/circle-gke:v2
 
 workflows:
