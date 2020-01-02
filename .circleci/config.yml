@@ -34,10 +34,10 @@ jobs:
       - gcr/gcr-auth
       - gcr/build-image:
           image: circle-gke
-          tag: "v2"
+          tag: "v3"
       - gcr/push-image:
           image: circle-gke
-          tag: "v2"
+          tag: "v3"
 
     
   deploy:
